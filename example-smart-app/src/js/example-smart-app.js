@@ -129,6 +129,7 @@
     $('#gender').html(p.gender);
     $('#birthdate').html(p.birthdate);
     $('#identifier').html(p.identifier);
+    $('#id_type').html(p.id_type);
     $('#height').html(p.height);
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);
