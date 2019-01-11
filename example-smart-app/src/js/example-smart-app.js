@@ -30,6 +30,9 @@
 
           var fname = '';
           var lname = '';
+          
+          var identifier = patient.identifier[0].value;
+          var id_type = patient.identifier[0].type.text;
 
           if (typeof patient.name[0] !== 'undefined') {
             fname = patient.name[0].given.join(' ');
@@ -47,6 +50,10 @@
           p.gender = gender;
           p.fname = fname;
           p.lname = lname;
+          
+          p.identifier = identifier;
+          p.id_type = id_type;
+          
           p.height = getQuantityValueAndUnit(height[0]);
 
           if (typeof systolicbp != 'undefined')  {
